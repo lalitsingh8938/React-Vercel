@@ -1,0 +1,155 @@
+
+  /* General Footer Styles */
+.footer {
+    background-color: dimgray;
+    padding: 50px 30px ;
+    color: black;
+  }
+  
+  .footer .container {
+    max-width: 120px;
+    margin: 0 auto;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px; /* Adds equal spacing between columns */
+  }
+  
+  .footer-column {
+    flex-basis: 30%; /* Adjusted to ensure equal width columns */
+    margin-bottom: 20px;
+  }
+  
+  .footer-logo {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .footer-description {
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: yellow;
+  }
+  
+  /* Email Signup */
+  .email-signup {
+    display: flex;
+    justify-content: center;
+
+  }
+  
+  .email-signup input {
+    width: 70%;
+    padding: 10px;
+    border-radius: 5px 0 0 5px;
+    border: 1px solid skyblue;
+  }
+  
+  .email-signup .email-btn {
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 0px 0px 0;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .email-signup .email-btn:hover {
+    background-color: green;
+  }
+  
+  /* Footer Links */
+  .footer-heading {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: yellow;
+  }
+  
+  .footer-links {
+    list-style: none;
+    padding: 0;
+    font-size: 25px;
+  }
+  
+  .footer-links li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+    color: darkorange;
+  }
+  
+  /* Contact Information */
+  .contact-info {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 10px;
+  }
+  
+  /* Footer Bottom */
+  .footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid whitesmoke;
+  }
+  
+  .footer-bottom p {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  
+  .footer-bottom-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .footer-bottom-links li {
+    margin: 0 15px;
+  }
+  
+  .footer-bottom-links a {
+    color: orange;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .footer-bottom-links a:hover {
+    color: blue;
+  }
+  
+
+
+  .copied-message {
+  color: blue;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.email-signup {
+  display: flex;
+  align-items: center;
+}
+
+.copy-icon {
+  font-size: 20px;
+}
+
+.email-input {
+  padding: 5px;
+  width: 200px;
+}
