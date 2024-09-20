@@ -161,12 +161,18 @@
 /* Social Media Icons */
 .footer-social-media {
   display: flex;
-  gap: 30px;
+  justify-content: flex-end; /* Moves them to the right */
+  gap: 40px; /* Adds space between icons */
+  margin-right: 110px; /* Adds space from the right edge */
+  margin-bottom:auto
 }
-
 .social-icon {
   font-size: 30px;
   margin-top: 30px;
-  color: yellow;
+  color: yellow
 }
 
+
+.footer-social-media .social-icon:hover {
+  color: blue; /* Color on hover */
+}
