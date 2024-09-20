@@ -8,13 +8,12 @@ const Footer = () => {
   const [copied, setCopied] = useState(false); // To track if the email was copied
 
   const handleCopy = () => {
-    const email = document.querySelector('.email-input').value;
-    if (email) {
-      navigator.clipboard.writeText(email);
-      setCopied(true); // Set copied to true
-      setTimeout(() => setCopied(false), 2000); // Show "Copied!" message for 2 seconds
-    }
+    const email = "hello@example.com"; // The email to be copied
+    navigator.clipboard.writeText(email);
+    setCopied(true); // Set copied to true
+    setTimeout(() => setCopied(false), 2000); // Show "Copied!" message for 2 seconds
   };
+  
 
   return (
     <footer className="footer">
