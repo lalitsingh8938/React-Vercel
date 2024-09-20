@@ -29,7 +29,6 @@ function App() {
         <Route path="/signin" element={<SigninPage />} />
 
 
-     
         {/* Agar user galat URL pe jaye toh ise home page par le jao */}
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>

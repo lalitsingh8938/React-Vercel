@@ -1,7 +1,8 @@
-// import React from "react";
+
 import './Footer.css'; 
 import { IoCopy } from "react-icons/io5";
 import React, { useState } from "react";
+import { FaFacebookF, FaInstagram, FaTwitter, FaLinkedinIn } from 'react-icons/fa';
 
 const Footer = () => {
   const [copied, setCopied] = useState(false); // To track if the email was copied
@@ -29,8 +30,7 @@ const Footer = () => {
               </p>
               <div className="email-signup">
                 <input type="email" className="email-input" placeholder="Email Address" />
-                <IoCopy className="copy-icon" onClick={handleCopy} style={{ cursor: 'pointer' }} />
-                {copied && <span className="copied-message">Copied!</span>} {/* Show Copied message */}
+               
                 <button type="submit" className="email-btn">→</button>
               </div>
             </div>
@@ -43,8 +43,8 @@ const Footer = () => {
               <li><a href="#">About Company</a></li>
               <li><a href="#">Home Shop</a></li>
               <li><a href="#">Our Menu (CMS)</a></li>
-              <h5 className="footer-heading">Location:</h5>
-            <p className="contact-info">202 Greater Noida, Noida Uttar Pradesh.</p>
+              <h5 className="footer-heading">Branch Location:</h5>
+            <p className="contact-info">402 Nehru Place Noida, Noida Uttar Pradesh.</p>
             <p style={{ fontSize: '20px' }}>India, 281405.</p>
             </ul>
           </div>
@@ -67,14 +67,28 @@ const Footer = () => {
             <h3 style={{ fontSize: '24px' }}> 
               <a href="tel:+125865789">+91 8938900984</a> 
             </h3>
-            <p className="contact-info">hello@example.com</p>
+               <div className="email-copy-section">
+                <p className="contact-info">
+                  hello@example.com
+                </p>
+                <IoCopy className="copy-icon" onClick={handleCopy} style={{ cursor: 'pointer' }} />
+                {copied && <span className="copied-message">Copied!</span>} {/* Show Copied message */}
+              </div>
+           
             <h5 className="footer-heading">Head Office Location:</h5>
             <p className="contact-info">202 California Lane California, United State. </p>
             <h3 style={{ fontSize: '24px' }}>
               <a href="tel:+125865789">+1 2586 6984</a> 
             </h3>
-          </div>
 
+              {/* Social media icons */}
+              <div className="footer-social-media">
+            <a href="https://www.facebook.com"><FaFacebookF className="social-icon" /></a>
+            <a href="https://www.instagram.com"><FaInstagram className="social-icon" /></a>
+            <a href="https://www.twitter.com"><FaTwitter className="social-icon" /></a>
+            <a href="https://www.linkedin.com"><FaLinkedinIn className="social-icon" /></a>
+          </div>
+          </div>
         </div>
 
         {/* Footer bottom */}
@@ -85,7 +99,7 @@ const Footer = () => {
             <li><a href="#">FAQs</a></li>
             <li><a href="#">Food Menu</a></li>
           </ul>
-        </div>
+        </div>      
       </div>
     </footer>
   );
